@@ -58,6 +58,17 @@ parameters as they converge, followed by the final parameter values.
 Reading that table is the point of the exercise — you can watch the error shrink
 and the parameters settle, and see how far 20 samples actually gets you.
 
+
+## Result
+
+![Parameter convergence over 20 samples](docs/parameter-convergence.png)
+
+Each row is one sample: the measured `y(n)`, the prediction `yhat`, the error
+between them, and the parameters as they stand at that iteration. The estimator
+starts from zero, so the first prediction is necessarily wrong and the early
+error is large. Watching the error column shrink while the parameters settle is
+the whole point of running it this way rather than fitting the record offline.
+
 ## Notes
 
 Source comments are in Indonesian, as originally written for a System Modelling
